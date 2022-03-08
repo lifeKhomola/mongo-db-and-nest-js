@@ -13,7 +13,7 @@ and is used to translate between objects in code and the representation of those
 @Module({
   imports: [
     //forRoot() method accepts the same configuration object as mongoose.connect()
-    MongooseModule.forRoot('mongodb://'),
+    MongooseModule.forRoot('mongodb+srv://vhutshilo:Vhutshilo1@cluster0.da7kw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
     DogsModule
   ],
   controllers: [AppController],
