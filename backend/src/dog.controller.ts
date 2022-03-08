@@ -4,8 +4,8 @@ import { DogsService } from './dog.service';
 import { CreateDogDto } from './dto';
 
 
-@Controller('cats')
-export class CatsController {
+@Controller('dogs')
+export class DogsController {
   constructor(private readonly dogsService: DogsService) {}
 
   @Post()

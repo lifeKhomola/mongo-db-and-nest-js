@@ -17,19 +17,19 @@ export class Dog {
     age: number;
 
     // creating relationships between models
-    @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Owner' })
-    owner: '';
+    // @Prop({ type: mongoose.Schema.Types.ObjectId, ref: 'Owner' })
+    // owner: '';
 
-    //Nest object
-    @Prop(raw({
-        firstName: { type: String },
-        lastName: { type: String }
-      }))
-      details: Record<string, any>;
+    // //Nest object
+    // @Prop(raw({
+    //     firstName: { type: String },
+    //     lastName: { type: String }
+    //   }))
+    //   details: Record<string, any>;
 
-    //for Arrays and objects
-    @Prop([String])
-    tags: string[];
+    // //for Arrays and objects
+    // @Prop([String])
+    // tags: string[];
     
 }
 export const DogSchema = SchemaFactory.createForClass(Dog);

@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
+import { DogsController } from './dog.controller';
 import { Dog, DogSchema } from './dog.schema';
 import { DogsService } from './dog.service';
 
@@ -7,7 +8,7 @@ import { DogsService } from './dog.service';
 
 @Module({
   imports: [MongooseModule.forFeature([{ name: Dog.name, schema: DogSchema }])],
-//   controllers: [CatsController],
+  controllers: [DogsController],
   providers: [DogsService],
 })
 export class DogsModule {}
